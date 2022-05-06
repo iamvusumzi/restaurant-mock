@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Raleway:wght@400;702;800&family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Raleway:wght@400;702;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Poppins:wght@200;300;500&family=Raleway:wght@400;702;800&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Poppins:wght@200;300;500&family=Raleway:wght@400;702;800&family=Satisfy&display=swap");
 
 * {
     margin: 0;
@@ -15,7 +17,10 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+.navbar-brand {
     font-family: Satisfy, sans-serif;
 }
 
@@ -23,14 +28,149 @@ h1 {
     font-size: 3rem;
     font-weight: 700;
 }
+h2,
+h3 {
+    color: #5f5950;
+    font-weight: bold;
+}
+
+.color {
+    color: #ffb03b;
+}
+
+/* NAv */
+
+header {
+    background: none;
+}
+
+header {
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(26, 24, 22, 0.5);
+    height: 70px;
+    padding: 10px;
+}
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+a.nav-link {
+    font-size: 15px;
+    font-weight: 350;
+    color: white;
+}
+a.nav-link:hover,
+button.nav-link:hover {
+    color: #ffb03b;
+}
+a.active {
+    color: #ffb03b;
+}
+
+.book-button a,
+.button-filled {
+    background-color: #ffb03b;
+}
+
+.navbar-toggler-icon {
+    font-size: 2rem;
+    color: antiquewhite;
+}
 /* Landing Styles */
+
+#landing1 {
+    background: linear-gradient(rgba(49, 31, 0, 0.8), rgba(49, 31, 0, 0.8)),
+        url("/images/salad-g6664e63b4_1920.jpg");
+}
+
+#landing2 {
+    background: linear-gradient(rgba(85, 52, 0, 0.8), rgba(49, 31, 0, 0.8)),
+        url("/images/chef-g5c7127864_1920.jpg");
+}
+
+#landing3 {
+    background: linear-gradient(rgba(85, 52, 0, 0.8), rgba(49, 31, 0, 0.8)),
+        url("/images/restaurant-gec77049d4_1920.jpg");
+}
 
 #home .carousel-item {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-blend-mode: overlay;
 }
 
 #home .landing-text {
     filter: drop-shadow(16px 5px 10px black);
+}
+
+/* Menu */
+
+.menu-ingredients {
+    font-family: Comic Neue, sans-serif;
+    font-size: 14px;
+    color: #948c81;
+}
+
+.color-more {
+    color: #ff9b08;
+}
+
+/* Specials */
+button.nav-link {
+    color: #433f39;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#specials button.active {
+    color: #ffb03b;
+    background: none;
+}
+
+@media screen and (max-width: 767px) {
+    #specials button.active {
+        color: white;
+        background: #ffb03b;
+        border-radius: 0;
+    }
+}
+
+/* Events */
+
+.events-bg {
+    background: linear-gradient(rgba(25, 19, 9, 0.9), rgba(25, 19, 9, 0.9)),
+        url("/images/chef-g5c7127864_1920.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+.price {
+    font-size: 26px;
+    width: 50px;
+    border-bottom: 3px solid #ff9b08;
+}
+
+#events i {
+    font-size: 20px;
+}
+
+/* Chefs */
+.chef-info .socials a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.chef {
+    position: relative;
+    padding: 0;
+}
+.chef-info {
+    position: absolute;
+    bottom: -60px;
+    left: 30px;
+    right: 30px;
 }

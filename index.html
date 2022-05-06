@@ -15,7 +15,93 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <section id="home" class="">
+        <!-- Start Navigation -->
+        <header class="fixed-top">
+            <div
+                class="container-fluid container-lg d-flex justify-content-between"
+            >
+                <a
+                    class="navbar-brand text-white fw-bold align-self-center"
+                    href="#"
+                >
+                    Vusumzi
+                </a>
+                <div class="nav-container d-flex">
+                    <nav class="navbar navbar-expand-lg text-white">
+                        <div
+                            class="collapse navbar-collapse justify-content-between"
+                            id="nav-links"
+                        >
+                            <ul class="navbar-nav">
+                                <li>
+                                    <a
+                                        class="nav-link active"
+                                        aria-current="page"
+                                        href="#landing"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+                                <!-- <li><a class="nav-link" href="#resume">Resume</a></li> -->
+                                <li>
+                                    <a class="nav-link" href="#menu">Menu</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#specials"
+                                        >Specials</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#events"
+                                        >Events</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#chefs">Chefs</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#gallery"
+                                        >Gallery</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#contact"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="book-button align-self-center mx-3">
+                        <a
+                            href="#book"
+                            class="btn rounded-pill px-3 py-2 text-white"
+                            >Book a Table</a
+                        >
+                    </div>
+                    <div class="nav-button align-self-center">
+                        <button
+                            class="navbar-toggler d-lg-none"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#nav-links"
+                            aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"
+                                ><i class="fa-solid fa-bars"></i
+                            ></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Of Navigation  -->
+
+        <section id="home" class="mb-5">
             <div class="container-fluid p-0 text-center text-white">
                 <div
                     id="testimonialSlider"
@@ -50,17 +136,17 @@
                         ></button>
                     </div>
                     <div class="carousel-inner">
-                        <div
-                            class="carousel-item vh-100 active"
-                            style="
-                                background-image: url(./images/restaurant-gec77049d4_1920.jpg);
-                            "
-                        >
+                        <div id="landing1" class="carousel-item vh-100 active">
                             <div
-                                class="landing-text d-flex flex-column justify-content-center align-items-center h-100"
+                                class="row landing-text d-flex flex-column justify-content-center align-items-center h-100"
                             >
-                                <div class="w-50">
-                                    <h1>First slide label</h1>
+                                <div
+                                    class="text-center col-xs-4 col-sm-6 col-md-8"
+                                >
+                                    <h1>
+                                        <span class="color">Vuso's</span>
+                                        Restaurant
+                                    </h1>
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Hic ad, illum
@@ -70,19 +156,28 @@
                                         neque voluptatum delectus fuga
                                         recusandae.
                                     </p>
+                                    <div class="buttons mt-4">
+                                        <a
+                                            href="#menu"
+                                            class="btn btn-outline-warning border-3 rounded-pill mx-3 px-4 text-white text-uppercase"
+                                        >
+                                            our menu
+                                        </a>
+                                        <a
+                                            href="#book"
+                                            class="btn btn-outline-warning border-3 rounded-pill mx-3 px-4 text-white text-uppercase"
+                                        >
+                                            Book a Table
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div
-                            class="carousel-item vh-100"
-                            style="
-                                background-image: url(./images/chef-g5c7127864_1920.jpg);
-                            "
-                        >
+                        <div id="landing2" class="carousel-item vh-100">
                             <div
                                 class="landing-text d-flex flex-column justify-content-center align-items-center h-100"
                             >
-                                <div class="w-50">
+                                <div class="col-xs-4 col-sm-6 col-md-8">
                                     <h1>2nd slide label</h1>
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur
@@ -93,19 +188,28 @@
                                         neque voluptatum delectus fuga
                                         recusandae.
                                     </p>
+                                    <div class="buttons mt-4">
+                                        <a
+                                            href="#menu"
+                                            class="btn btn-outline-warning border-3 rounded-pill mx-3 px-4 text-white text-uppercase"
+                                        >
+                                            our menu
+                                        </a>
+                                        <a
+                                            href="#book"
+                                            class="btn btn-outline-warning border-3 rounded-pill mx-3 px-4 text-white text-uppercase"
+                                        >
+                                            Book a Table
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div
-                            class="carousel-item vh-100"
-                            style="
-                                background-image: url(./images/salad-g6664e63b4_1920.jpg);
-                            "
-                        >
+                        <div id="landing3" class="carousel-item vh-100">
                             <div
                                 class="landing-text d-flex flex-column justify-content-center align-items-center h-100"
                             >
-                                <div class="w-50">
+                                <div class="col-xs-4 col-sm-6 col-md-8">
                                     <h1>Third slide label</h1>
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur
@@ -116,6 +220,20 @@
                                         neque voluptatum delectus fuga
                                         recusandae.
                                     </p>
+                                    <div class="buttons mt-4">
+                                        <a
+                                            href="#menu"
+                                            class="btn btn-outline-warning border-3 rounded-pill mx-3 px-4 text-white text-uppercase"
+                                        >
+                                            our menu
+                                        </a>
+                                        <a
+                                            href="#book"
+                                            class="btn btn-outline-warning border-3 rounded-pill mx-3 px-4 text-white text-uppercase"
+                                        >
+                                            Book a Table
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -148,10 +266,10 @@
                 </div>
             </div>
         </section>
-        <section id="about">
-            <div class="container-fluid">
+        <section id="about" class="mb-5">
+            <div class="container-fluid mb-5">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 ps-0 pe-5">
                         <img
                             class="img-fluid w-100 h-400px"
                             style="height: 400px; object-fit: cover"
@@ -194,15 +312,17 @@
                     </div>
                 </div>
             </div>
-            <div class="container mt-5">
-                <div class="section-title text-center w-50 m-auto">
-                    <h2>Why Choose Our Restaurant</h2>
-                    <p>
+            <div class="container">
+                <div
+                    class="section-title text-center w-50 mx-auto mt-5 pt-5 pb-3"
+                >
+                    <h2 class="mb-3">
+                        Why Choose <span class="color">Our Restaurant</span>
+                    </h2>
+                    <p class="fw-light">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Nobis aspernatur consequatur quae tenetur illum, unde
-                        magni! Totam error maiores at veritatis perferendis
-                        iusto ut ipsam accusamus, dicta incidunt mollitia
-                        quod.15
+                        magni! Totam error maiores at veritatis
                     </p>
                 </div>
                 <div class="row">
@@ -245,49 +365,665 @@
                 </div>
             </div>
         </section>
-        <section id="Menu">
+        <section id="menu" class="mb-5">
             <div class="container">
-                <div class="section-title text-center">
-                    <h2>Menu</h2>
+                <div class="section-title text-center mt-5 pt-5 pb-3">
+                    <h2 class="pb-2">
+                        Check our tasty <span class="color">Menu</span>
+                    </h2>
                     <ul
-                        class="list-unstyled d-flex justify-content-center align-items-center"
+                        class="list-unstyled mt-3 d-flex justify-content-center align-items-center"
                     >
-                        <li><button class="btn btn-warning"></button></li>
-                        <li><button class="btn btn-warning"></button></li>
-                        <li><button class="btn btn-warning"></button></li>
+                        <li class="m-2">
+                            <button
+                                class="btn button-filled rounded-pill px-3 btn-warning text-white"
+                            >
+                                Show All
+                            </button>
+                        </li>
+                        <li class="m-2">
+                            <button
+                                class="btn rounded-pill px-3 btn-outline-warning fw-light text-dark"
+                            >
+                                Starters
+                            </button>
+                        </li>
+                        <li class="m-2">
+                            <button
+                                class="btn rounded-pill px-3 btn-outline-warning fw-light text-dark"
+                            >
+                                Salads
+                            </button>
+                        </li>
+                        <li class="m-2">
+                            <button
+                                class="btn rounded-pill px-3 btn-outline-warning fw-light text-dark"
+                            >
+                                Specialty
+                            </button>
+                        </li>
                     </ul>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">col1</div>
-                    <div class="col-md-6">col2</div>
+                    <div class="col-md-6 px-4">
+                        <ul class="list-unstyled">
+                            <li>
+                                <p class="d-flex justify-content-between mb-0">
+                                    <span class="color-more fw-bold"
+                                        >Lobser Bisque</span
+                                    >
+                                    <span class="price">$5.95</span>
+                                </p>
+                                <p class="menu-ingredients fw-light fst-italic">
+                                    Lorem, ipsum, dolor, sit, amet.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="d-flex justify-content-between mb-0">
+                                    <span class="color-more fw-bold"
+                                        >Lobser Bisque</span
+                                    >
+                                    <span class="price">$5.95</span>
+                                </p>
+                                <p class="menu-ingredients fw-light fst-italic">
+                                    Lorem, ipsum, dolor, sit, amet.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="d-flex justify-content-between mb-0">
+                                    <span class="color-more fw-bold"
+                                        >Lobser Bisque</span
+                                    >
+                                    <span class="price">$5.95</span>
+                                </p>
+                                <p class="menu-ingredients fw-light fst-italic">
+                                    Lorem, ipsum, dolor, sit, amet.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="d-flex justify-content-between mb-0">
+                                    <span class="color-more fw-bold"
+                                        >Lobser Bisque</span
+                                    >
+                                    <span class="price">$5.95</span>
+                                </p>
+                                <p class="menu-ingredients fw-light fst-italic">
+                                    Lorem, ipsum, dolor, sit, amet.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="d-flex justify-content-between mb-0">
+                                    <span class="color-more fw-bold"
+                                        >Lobser Bisque</span
+                                    >
+                                    <span class="price">$5.95</span>
+                                </p>
+                                <p class="menu-ingredients fw-light fst-italic">
+                                    Lorem, ipsum, dolor, sit, amet.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="d-flex justify-content-between mb-0">
+                                    <span class="color-more fw-bold"
+                                        >Lobser Bisque</span
+                                    >
+                                    <span class="price">$5.95</span>
+                                </p>
+                                <p class="menu-ingredients fw-light fst-italic">
+                                    Lorem, ipsum, dolor, sit, amet.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 px-4">
+                        <ul class="list-unstyled">
+                            <li>
+                                <p class="d-flex justify-content-between mb-0">
+                                    <span class="color-more fw-bold"
+                                        >Lobser Bisque</span
+                                    >
+                                    <span class="price">$5.95</span>
+                                </p>
+                                <p class="menu-ingredients fw-light fst-italic">
+                                    Lorem, ipsum, dolor, sit, amet.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="d-flex justify-content-between mb-0">
+                                    <span class="color-more fw-bold"
+                                        >Lobser Bisque</span
+                                    >
+                                    <span class="price">$5.95</span>
+                                </p>
+                                <p class="menu-ingredients fw-light fst-italic">
+                                    Lorem, ipsum, dolor, sit, amet.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="d-flex justify-content-between mb-0">
+                                    <span class="color-more fw-bold"
+                                        >Lobser Bisque</span
+                                    >
+                                    <span class="price">$5.95</span>
+                                </p>
+                                <p class="menu-ingredients fw-light fst-italic">
+                                    Lorem, ipsum, dolor, sit, amet.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="d-flex justify-content-between mb-0">
+                                    <span class="color-more fw-bold"
+                                        >Lobser Bisque</span
+                                    >
+                                    <span class="price">$5.95</span>
+                                </p>
+                                <p class="menu-ingredients fw-light fst-italic">
+                                    Lorem, ipsum, dolor, sit, amet.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="specials">
+        <section id="specials" class="mb-5">
             <div class="container">
-                <div class="section-title text-center w-50 m-auto">
-                    <h2>Specials Heading</h2>
-                    <p>
+                <div
+                    class="section-title text-center w-50 m-auto mt-5 pt-5 pb-3"
+                >
+                    <h2 class="mb-3">
+                        Check our <span class="color">Specials</span>
+                    </h2>
+                    <p class="fw-light">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Ducimus beatae debitis expedita quae aliquam animi
                         voluptatum molestias rem, tempora ea.
                     </p>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">sidebar</div>
-                    <div class="col-md-9">
-                        <div class="row">
-                            <div class="col-md-9">content</div>
-                            <div class="col-md-3">image</div>
+                    <div class="d-md-flex align-items-start">
+                        <div class="col-md-3 mb-5">
+                            <div
+                                class="nav flex-column text-start nav-pills me-3"
+                                id="v-pills-tab"
+                                role="tablist"
+                                aria-orientation="vertical"
+                            >
+                                <button
+                                    class="nav-link text-start border-0 py-3 active"
+                                    id="tab-button-1"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#tab-1"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="v-pills-home"
+                                    aria-selected="true"
+                                >
+                                    Our first Special
+                                </button>
+                                <button
+                                    class="nav-link text-start py-3"
+                                    id="tab-button-2"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#tab-2"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="v-pills-profile"
+                                    aria-selected="false"
+                                >
+                                    Our second Special
+                                </button>
+                                <button
+                                    class="nav-link text-start py-3"
+                                    id="tab-button-3"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#tab-3"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="v-pills-messages"
+                                    aria-selected="false"
+                                >
+                                    Our third Special
+                                </button>
+                                <button
+                                    class="nav-link text-start py-3"
+                                    id="tab-button-4"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#tab-4"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="v-pills-settings"
+                                    aria-selected="false"
+                                >
+                                    Our fourth Special
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div
+                                    class="tab-pane fade show active"
+                                    id="tab-1"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-home-tab"
+                                >
+                                    <div class="row">
+                                        <div
+                                            class="col-md-4 order-md-last mb-4"
+                                        >
+                                            <img
+                                                class="img-fluid w-100 rounded-circle"
+                                                src="https://picsum.photos/200/200?random=1"
+                                            />
+                                        </div>
+                                        <div
+                                            class="col-md-8 p-3 order-md-first"
+                                        >
+                                            <h3 class="mb-4">
+                                                Lorem ipsum dolor sit.
+                                            </h3>
+                                            <p class="fst-italic">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Eligendi, quisquam. Lorem,
+                                                ipsum.
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Harum illo ipsa inventore rerum,
+                                                excepturi sit laborum dolore,
+                                                cupiditate incidunt praesentium
+                                                repudiandae ab, magni iusto
+                                                saepe?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="tab-2"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-profile-tab"
+                                >
+                                    <div class="row">
+                                        <div
+                                            class="col-md-4 order-md-last mb-4"
+                                        >
+                                            <img
+                                                class="img-fluid w-100 rounded-circle"
+                                                src="https://picsum.photos/200/200?random=2"
+                                            />
+                                        </div>
+                                        <div
+                                            class="col-md-8 p-3 order-md-first"
+                                        >
+                                            <h3 class="mb-4">
+                                                Lorem ipsum dolor sit.
+                                            </h3>
+                                            <p class="fst-italic">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Eligendi, quisquam. Lorem,
+                                                ipsum.
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Harum illo ipsa inventore rerum,
+                                                excepturi sit laborum dolore,
+                                                cupiditate incidunt praesentium
+                                                repudiandae ab, magni iusto
+                                                saepe?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="tab-3"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-messages-tab"
+                                >
+                                    <div class="row">
+                                        <div
+                                            class="col-md-4 order-md-last mb-4"
+                                        >
+                                            <img
+                                                class="img-fluid w-100 rounded-circle"
+                                                src="https://picsum.photos/200/200?random=3"
+                                            />
+                                        </div>
+                                        <div
+                                            class="col-md-8 p-3 order-md-first"
+                                        >
+                                            <h3 class="mb-4">
+                                                Lorem ipsum dolor sit.
+                                            </h3>
+                                            <p class="fst-italic">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Eligendi, quisquam. Lorem,
+                                                ipsum.
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Harum illo ipsa inventore rerum,
+                                                excepturi sit laborum dolore,
+                                                cupiditate incidunt praesentium
+                                                repudiandae ab, magni iusto
+                                                saepe?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="tab-4"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-settings-tab"
+                                >
+                                    <div class="row">
+                                        <div
+                                            class="col-md-4 order-md-last mb-4"
+                                        >
+                                            <img
+                                                class="img-fluid w-100 rounded-circle"
+                                                src="https://picsum.photos/200/200?random=2"
+                                            />
+                                        </div>
+                                        <div
+                                            class="col-md-8 p-3 order-md-first"
+                                        >
+                                            <h3 class="mb-4">
+                                                Lorem ipsum dolor sit.
+                                            </h3>
+                                            <p class="fst-italic">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Eligendi, quisquam. Lorem,
+                                                ipsum.
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Harum illo ipsa inventore rerum,
+                                                excepturi sit laborum dolore,
+                                                cupiditate incidunt praesentium
+                                                repudiandae ab, magni iusto
+                                                saepe?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="events">
-            <div class="container">
-                <h2 class="text-center">Events</h2>
-                Insert event carousel here
+        <section id="events" class="p-0">
+            <div class="row events-bg mb-5">
+                <div
+                    id="testimonialSlider"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                >
+                    <div class="carousel-indicators mb-5">
+                        <button
+                            type="button"
+                            data-bs-target="#testimonialSlider"
+                            data-bs-slide-to="0"
+                            class="active rounded-circle"
+                            style="width: 20px; height: 20px"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#testimonialSlider"
+                            data-bs-slide-to="1"
+                            class="rounded-circle"
+                            style="width: 20px; height: 20px"
+                            aria-label="Slide 2"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#testimonialSlider"
+                            data-bs-slide-to="2"
+                            class="rounded-circle"
+                            style="width: 20px; height: 20px"
+                            aria-label="Slide 3"
+                        ></button>
+                    </div>
+                    <div class="carousel-inner pb-5 mb-5">
+                        <div class="container">
+                            <div
+                                class="section-title text-center mt-5 pt-5 pb-3"
+                            >
+                                <h2 class="pb-2 text-white">
+                                    Organise Your
+                                    <span class="color">Events</span> in our
+                                    Restaurant
+                                </h2>
+                            </div>
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-6 mb-5">
+                                        <img
+                                            class="img-fluid w-100"
+                                            src="https://picsum.photos/200/150?random=1"
+                                            alt="Image"
+                                        />
+                                    </div>
+                                    <div class="col-md-6 text-white">
+                                        <h4 class="color fw-bold">
+                                            Private Parties
+                                        </h4>
+                                        <p class="price fw-bold">R25.00</p>
+                                        <div class="row">
+                                            <p class="fst-italic">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Repellendus veritatis nihil
+                                                maxime voluptatibus, praesentium
+                                                hic
+                                            </p>
+                                            <ul class="list-unstyled">
+                                                <li class="py-2">
+                                                    <i
+                                                        class="fa-regular fa-circle-check color px-2"
+                                                    ></i>
+                                                    <span
+                                                        >Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit.
+                                                        Quia!</span
+                                                    >
+                                                </li>
+                                                <li class="py-2">
+                                                    <i
+                                                        class="fa-regular fa-circle-check color px-2"
+                                                    ></i>
+                                                    <span
+                                                        >Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit.
+                                                        Quia!</span
+                                                    >
+                                                </li>
+                                                <li class="py-2">
+                                                    <i
+                                                        class="fa-regular fa-circle-check color px-2"
+                                                    ></i>
+                                                    <span
+                                                        >Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit.
+                                                        Quia!</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                                Iure odio eum consequuntur
+                                                voluptatibus fugit praesentium
+                                                aliquid soluta deleniti
+                                                aspernatur dignissimos.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-6 mb-5">
+                                        <img
+                                            class="img-fluid w-100"
+                                            src="https://picsum.photos/200/150?random=2"
+                                            alt="Image"
+                                        />
+                                    </div>
+                                    <div class="col-md-6 text-white">
+                                        <h4 class="color fw-bold">
+                                            Private Parties
+                                        </h4>
+                                        <p class="price fw-bold">R25.00</p>
+                                        <div class="row">
+                                            <p class="fst-italic">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Repellendus veritatis nihil
+                                                maxime voluptatibus, praesentium
+                                                hic
+                                            </p>
+                                            <ul class="list-unstyled">
+                                                <li class="py-2">
+                                                    <i
+                                                        class="fa-regular fa-circle-check color px-2"
+                                                    ></i>
+                                                    <span
+                                                        >Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit.
+                                                        Quia!</span
+                                                    >
+                                                </li>
+                                                <li class="py-2">
+                                                    <i
+                                                        class="fa-regular fa-circle-check color px-2"
+                                                    ></i>
+                                                    <span
+                                                        >Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit.
+                                                        Quia!</span
+                                                    >
+                                                </li>
+                                                <li class="py-2">
+                                                    <i
+                                                        class="fa-regular fa-circle-check color px-2"
+                                                    ></i>
+                                                    <span
+                                                        >Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit.
+                                                        Quia!</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                                Iure odio eum consequuntur
+                                                voluptatibus fugit praesentium
+                                                aliquid soluta deleniti
+                                                aspernatur dignissimos.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-6 mb-5">
+                                        <img
+                                            class="img-fluid w-100"
+                                            src="https://picsum.photos/200/150?random?=3"
+                                            alt="Image"
+                                        />
+                                    </div>
+                                    <div class="col-md-6 text-white">
+                                        <h4 class="color fw-bold">
+                                            Private Parties
+                                        </h4>
+                                        <p class="price fw-bold">R25.00</p>
+                                        <div class="row">
+                                            <p class="fst-italic">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Repellendus veritatis nihil
+                                                maxime voluptatibus, praesentium
+                                                hic
+                                            </p>
+                                            <ul class="list-unstyled">
+                                                <li class="py-2">
+                                                    <i
+                                                        class="fa-regular fa-circle-check color px-2"
+                                                    ></i>
+                                                    <span
+                                                        >Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit.
+                                                        Quia!</span
+                                                    >
+                                                </li>
+                                                <li class="py-2">
+                                                    <i
+                                                        class="fa-regular fa-circle-check color px-2"
+                                                    ></i>
+                                                    <span
+                                                        >Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit.
+                                                        Quia!</span
+                                                    >
+                                                </li>
+                                                <li class="py-2">
+                                                    <i
+                                                        class="fa-regular fa-circle-check color px-2"
+                                                    ></i>
+                                                    <span
+                                                        >Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit.
+                                                        Quia!</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                                Iure odio eum consequuntur
+                                                voluptatibus fugit praesentium
+                                                aliquid soluta deleniti
+                                                aspernatur dignissimos.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="container">
                 <div class="section-title text-center w-50 m-auto">
@@ -366,8 +1102,11 @@
         <section id="gallery">
             <div class="container">
                 <div class="section-title text-center w-50 m-auto">
-                    <h2>Specials Heading</h2>
-                    <p>
+                    <h2>
+                        Some photos from
+                        <span class="color">Our Restaurant</span>
+                    </h2>
+                    <p class="fw-light">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Ducimus beatae debitis expedita quae aliquam animi
                         voluptatum molestias rem, tempora ea.
@@ -436,7 +1175,160 @@
             </div>
         </section>
 
-        <section id="chefs"><div class="container"></div></section>
+        <section id="chefs">
+            <div class="container">
+                <div class="section-title text-center mt-5 pt-5 pb-3">
+                    <h2 class="pb-2">
+                        Our Proffesional <span class="color">Chefs</span>
+                    </h2>
+                    <p class="fw-light">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ducimus beatae debitis expedita quae aliquam animi
+                        voluptatum molestias rem, tempora ea.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="chef col-sm-6 col-md-4 p-3">
+                        <div class="chef-image w-100">
+                            <img
+                                class="img-fluid w-100"
+                                src="https://picsum.photos/200?random=1
+                        "
+                                alt="chef"
+                            />
+                        </div>
+                        <div class="chef-info p-4 bg-white shadow text-center">
+                            <h5 class="chef-name">Vusumzi Msengana</h5>
+                            <p class="fst-italic">Master Chef</p>
+                            <div class="socials">
+                                <ul
+                                    class="list-unstyled d-flex justify-content-center align-items-center"
+                                >
+                                    <li class="mx-2">
+                                        <a href=""
+                                            ><i class="fa-brands fa-twitter"></i
+                                        ></a>
+                                    </li>
+                                    <li class="mx-2">
+                                        <a href=""
+                                            ><i
+                                                class="fa-brands fa-facebook"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li class="mx-2">
+                                        <a href=""
+                                            ><i
+                                                class="fa-brands fa-instagram"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li class="mx-2">
+                                        <a href=""
+                                            ><i
+                                                class="fa-brands fa-linkedin"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chef col-sm-6 col-md-4 p-3">
+                        <div class="chef-image w-100">
+                            <img
+                                class="img-fluid w-100"
+                                src="https://picsum.photos/200?random=2
+                        "
+                                alt="chef"
+                            />
+                        </div>
+                        <div class="chef-info p-4 bg-white shadow text-center">
+                            <h5 class="chef-name">Vusumzi Msengana</h5>
+                            <p class="fst-italic">Master Chef</p>
+                            <div class="socials">
+                                <ul
+                                    class="list-unstyled d-flex justify-content-center align-items-center"
+                                >
+                                    <li class="mx-2">
+                                        <a href=""
+                                            ><i class="fa-brands fa-twitter"></i
+                                        ></a>
+                                    </li>
+                                    <li class="mx-2">
+                                        <a href=""
+                                            ><i
+                                                class="fa-brands fa-facebook"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li class="mx-2">
+                                        <a href=""
+                                            ><i
+                                                class="fa-brands fa-instagram"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li class="mx-2">
+                                        <a href=""
+                                            ><i
+                                                class="fa-brands fa-linkedin"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chef col-sm-6 col-md-4 p-3">
+                        <div class="chef-image w-100">
+                            <img
+                                class="img-fluid w-100"
+                                src="https://picsum.photos/200?random=3
+                        "
+                                alt="chef"
+                            />
+                        </div>
+                        <div class="chef-info p-4 bg-white shadow text-center">
+                            <h5 class="chef-name">Vusumzi Msengana</h5>
+                            <p class="fst-italic">Master Chef</p>
+                            <div class="socials">
+                                <ul
+                                    class="list-unstyled d-flex justify-content-center align-items-center"
+                                >
+                                    <li class="mx-2">
+                                        <a href=""
+                                            ><i class="fa-brands fa-twitter"></i
+                                        ></a>
+                                    </li>
+                                    <li class="mx-2">
+                                        <a href=""
+                                            ><i
+                                                class="fa-brands fa-facebook"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li class="mx-2">
+                                        <a href=""
+                                            ><i
+                                                class="fa-brands fa-instagram"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li class="mx-2">
+                                        <a href=""
+                                            ><i
+                                                class="fa-brands fa-linkedin"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="contact">
             <div class="container"></div>
         </section>
@@ -444,6 +1336,11 @@
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Font Awesome -->
+        <script
+            src="https://kit.fontawesome.com/a6df19af5a.js"
             crossorigin="anonymous"
         ></script>
     </body>
